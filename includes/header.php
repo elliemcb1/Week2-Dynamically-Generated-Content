@@ -8,5 +8,10 @@
 </head>
 <body>
 <header>
-
+        <h2>Customer Database</h2>
+<nav>
+        <a href="form.php">Add custmers</a> |
+        <a href="view_customers.php">View DB</a> |
+      
+    </nav>
 </header>

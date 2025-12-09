@@ -1,16 +1,33 @@
+/* General layout */
 body {
     font-family: Arial, sans-serif;
     background: #f2f2f2;
-    padding: 40px;
     margin: 0;
 }
 
 main {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    padding: 20px;
 }
 
+/* Header styling */
+header {
+    background-color: #79a4d1;
+    font-size: 20px;
+    color: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: #013367 0 4px 8px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Customer form container */
 .customer-form {
     width: 450px;
     background: #fff;
@@ -25,6 +42,7 @@ main {
     color: #333;
 }
 
+/* Fieldset styling */
 fieldset {
     border: 1px solid #ccc;
     padding: 20px;
@@ -38,6 +56,7 @@ legend {
     color: #555;
 }
 
+/* Label and inputs */
 label {
     display: block;
     font-weight: bold;
@@ -56,7 +75,9 @@ input[type="email"] {
     box-sizing: border-box;
 }
 
+/* Submit button */
 button[type="submit"] {
+    margin-bottom: 10px;
     width: 100%;
     padding: 12px;
     border: none;
@@ -70,4 +91,92 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
     background: #0056b3;
+}
+
+/* Reset button */
+button[type="reset"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #17941d;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button[type="reset"]:hover {
+    background: #55e867;
+}
+
+/* TABLE STYLING */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+/* Borders */
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+/* Header */
+th {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* Table data */
+td {
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Alternating rows */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Hover */
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Action buttons */
+table a {
+    padding: 6px 12px;
+    text-decoration: none;
+    font-size: 13px;
+    border-radius: 4px;
+    color: white;
+    display: inline-block;
+}
+
+/* Edit */
+table a[href*='edit'] {
+    background-color: #4CAF50;
+}
+
+/* Delete */
+table a[href*='delete'] {
+    background-color: #d9534f;
+}
+
+/* Hover effect */
+table a:hover {
+    opacity: 0.8;
+}
+
+/* Page headings */
+h2 {
+    color: #333;
+    text-align: center;
 }
